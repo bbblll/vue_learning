@@ -25,7 +25,7 @@
     </div>
 </template>
 <script setup>
-import {useRoute } from 'vue-router';
+import {useRoute,onBeforeRouteUpdate} from 'vue-router';
 import {ref} from 'vue'
 
 const default_active = ref('')
@@ -34,6 +34,10 @@ const route = useRoute()
 
 // console.log(route)
 default_active.value = route.path
+
+onBeforeRouteUpdate((to) => {
+    default_active.value = to.path
+})
 
 </script>
 

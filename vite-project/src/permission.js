@@ -14,7 +14,6 @@ router.beforeEach(async (to, from, next) => {
     let hasNewRoutes = false
     if(token && !hasInfoData){
         await postInfoData().then((res)=>{
-            console.log(1)
             let infodata = res.data.data
             let menus = infodata.menus
             // console.log(infodata)
