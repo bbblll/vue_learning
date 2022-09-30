@@ -48,7 +48,7 @@ export default function useInitTabs() {
         {
             name: '/',
             meta: {
-                title: '后台控制'
+                title: 'メインコンソール'
             }
         }
     ]

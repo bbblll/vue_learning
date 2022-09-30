@@ -31,119 +31,119 @@ const asyncRoutes = [{
     name:"/category/list",
     component:CategoryList,
     meta:{
-        title:"分类列表"
+        title:"分類管理"
     }
 },{
     path:"/user/list",
     name:"/user/list",
     component:UserList,
     meta:{
-        title:"用户列表"
+        title:"ユーザー管理"
     }
 },{
     path:"/order/list",
     name:"/order/list",
     component:OrderList,
     meta:{
-        title:"订单列表"
+        title:"注文管理"
     }
 },{
     path:"/comment/list",
     name:"/comment/list",
     component:CommentList,
     meta:{
-        title:"评价列表"
+        title:"コメント管理"
     }
 },{
     path:"/image/list",
     name:"/image/list",
     component:ImageList,
     meta:{
-        title:"图库列表"
+        title:"画像管理"
     }
 },{
     path:"/notice/list",
     name:"/notice/list",
     component:NoticeList,
     meta:{
-        title:"公告列表"
+        title:"掲示管理"
     }
 },{
     path:"/setting/base",
     name:"/setting/base",
     component:SettingBase,
     meta:{
-        title:"配置"
+        title:"基礎設置"
     }
 },{
     path:"/coupon/list",
     name:"/coupon/list",
     component:CouponList,
     meta:{
-        title:"优惠券列表"
+        title:"クーポン管理"
     }
 },{
     path:"/manager/list",
     name:"/manager/list",
     component:ManagerList,
     meta:{
-        title:"管理员管理"
+        title:"管理者管理"
     }
 },{
     path:"/access/list",
     name:"/access/list",
     component:AccessList,
     meta:{
-        title:"菜单权限管理"
+        title:"権限管理"
     }
 },{
     path:"/role/list",
     name:"/role/list",
     component:RoleList,
     meta:{
-        title:"角色管理"
+        title:"役割管理"
     }
 },{
     path:"/skus/list",
     name:"/skus/list",
     component:SkusList,
     meta:{
-        title:"规格管理"
+        title:"規格管理"
     }
 },{
     path:"/level/list",
     name:"/level/list",
     component:LevelList,
     meta:{
-        title:"会员等级"
+        title:"会員管理"
     }
 },{
     path:"/setting/buy",
     name:"/setting/buy",
     component:SettingBuy,
     meta:{
-        title:"支付设置"
+        title:"お支払い設定"
     }
 },{
     path:"/setting/ship",
     name:"/setting/ship",
     component:SettingShip,
     meta:{
-        title:"物流设置"
+        title:"物流管理"
     }
 },{
     path:"/distribution/index",
     name:"/distribution/index",
     component:DistributionIndex,
     meta:{
-        title:"分销员管理"
+        title:"流通員管理"
     }
 },{
     path:"/distribution/setting",
     name:"/distribution/setting",
     component:DistributionSetting,
     meta:{
-        title:"分销设置"
+        title:"流通設置"
     }
 }]
 
