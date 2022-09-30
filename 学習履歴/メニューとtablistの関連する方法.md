@@ -1,0 +1,6 @@
+# メニューとtablistを関連させる方法について
+## 問題の内容
+1. 右にあるメニューと上にあるtablistはroute.pathを変更することができますが、メニューを用いてroute.pathを変更する場合、tablistの値は変わらない、tablistを用いてroute.pathを変更する場合も、メニューの値も変わらないという問題がある。
+2. メニューで新しいpathにいくと、tablistに新しいpathを追加する必要がある。
+3. tablistのメンバーを一つ消すとき、消すメンバーのpathは目前のpathと同じとなった場合も、route.pathの値を変更する必要がある
+
