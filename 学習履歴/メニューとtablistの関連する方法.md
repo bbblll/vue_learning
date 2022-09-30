@@ -5,7 +5,7 @@
 2. メニューで新しいpathにいくと、tablistに新しいpathを追加する必要がある。
 3. tablistのメンバーを一つ消すとき、消すメンバーのpathは目前のpathと同じとなった場合も、route.pathの値を変更する必要がある
 > ## 問題対策、vue-routeのonBeforeRouteUpdateという方法を使う！
-&ensp;onBeforeRouteUpdateとは、他のpathに行く前、何をすればいいと考えている時に使う関数である。そして、今のすべきことは、onBeforeRouteUpdateを使って、メニューとtablistの値を更新することである。コードは以下となる
++ onBeforeRouteUpdateとは、他のpathに行く前、何をすればいいと考えている時に使う関数である。そして、今のすべきことは、onBeforeRouteUpdateを使って、メニューとtablistの値を更新することである。コードは以下となる
 > src/composables/uesTabs.js
 
 ```javascript
@@ -37,5 +37,17 @@ onBeforeRouteUpdate((to) => {
 onBeforeRouteUpdate((to) => {
     default_active.value = to.path
 })
+```
 
+>## tablistの一つを消すときの対策
+> src/composables/uesTabs.js
+```javascript
+//clickしたtabを消す場合、このtabの前のtabのnameに移動する
+function tabremove(name) {
+    let index = editableTabs.value.findIndex(o => {
+        return o.name == name
+    })
+    editableTabs.value.splice(index, 1)
+    if (editableTabsValue.value == name) router.push(editableTabs.value[index - 1].name)
+    }
 ```
